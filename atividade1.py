@@ -4,5 +4,6 @@
 def parametroNome(nome):
     if (nome==''):  #Declaração de nome como uma string
         return nome #Retorna o nome ao contrário 
-    return nome[-1] + parametroNome(nome[:-1]) #Função que decrementa as letras e reescreve ao contrário
-print(parametroNome('Teodoro'))#Definição de nome como "Teodoro"
+    parametroRes = nome[-1] + parametroNome(nome[:-1])
+    return parametroRes #Função que decrementa as letras e reescreve ao contrário
+print(parametroNome('alan'))#Definição de nome como "Teodoro"
